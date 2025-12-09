@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Review | BookVerse</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+  <header>
+    <h1>Submit Your Book Review</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="submit-review.html" class="active">Submit Review</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>Share Your Review</h2>
+    <form action="thanks.html" method="post">
+      <label for="book-title">Book Title:</label>
+      <input type="text" id="book-title" name="book-title" required><br>
+
+      <label for="review-text">Your Review:</label>
+      <textarea id="review-text" name="review-text" rows="5" required></textarea><br>
+
+      <label for="rating">Rating:</label>
+      <select id="rating" name="rating" required>
+        <option value="">--Select--</option>
+        <option>★☆☆☆☆</option>
+        <option>★★☆☆☆</option>
+        <option>★★★☆☆</option>
+        <option>★★★★☆</option>
+        <option>★★★★★</option>
+      </select><br>
+
+      <input type="submit" value="Submit Review">
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 BookVerse | Share your story today!</p>
+  </footer>
+
+</body>
+</html>
